@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>外交部領事事務局護照預約申請</title>
+    <title>領務局-有條件式線上申換護照系統</title>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -61,16 +61,17 @@
             content: counters(num, ".") " "
         }
         tbody tr td:nth-child(2) {
-            width: 35%
+            width: 60%;
+            text-align: left;
         }
         .btn_grp{
             text-align: right;
         }
         @media screen and (max-width:545px) {
-         .btn_grp{
-            text-align: center;
-        } 
-    }
+            .btn_grp{
+                text-align: center;
+            } 
+        }
     </style>
 </head>
 <body>
@@ -82,6 +83,7 @@
         <hr>
         <div class="table_wrapper">
             <!-- hyUI 標準頁面 -->
+            <h3>換發護照</h3>
             <table>
                 <thead>
                     <tr>
@@ -93,23 +95,78 @@
                 <tbody>
                     <tr>
                         <td></td>
-                        <td>登入頁 - 旅行社（資訊跳窗更新在此）</td>
+                        <td>首頁</td>
+                        <td><a href="mp.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>01 - 登入頁 - 線上申換（跳窗：注意事項）</td>
                         <td><a href="login.htm" target="_blank"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>登入頁 - 旅行社 show QR code</td>
-                        <td><a href="login-qrcode.htm" target="_blank"></a></td>
+                        <td>02 - 個資聲明 / 驗證電子郵件（雙欄）（跳窗：注意事項）</td>
+                        <td><a href="sp2.htm" target="_blank"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>登入頁 - 個人</td>
-                        <td><a href="p_login.htm" target="_blank"></a></td>
+                        <td>04 - 資料不符（雙欄）</td>
+                        <td><a href="sp3.htm" target="_blank"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>基本內頁</td>
-                        <td><a href="page.htm" target="_blank"></a></td>
+                        <td>05 - 資料填寫（雙欄）</td>
+                        <td><a href="sp4.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>06 - 上傳照片（雙欄）</td>
+                        <td><a href="sp5.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>06_1 - 縮放照片（雙欄）</td>
+                        <td><a href="sp6-1.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>06_2 - 檢核照片 通過（雙欄）</td>
+                        <td><a href="sp6-2.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>06_2 - 檢核照片 不通過（雙欄）（跳窗：強迫上傳）</td>
+                        <td><a href="sp6-2.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>08 - 資料預覽＆電子簽章（雙欄）</td>
+                        <td><a href="sp7.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>09、10 - 線上繳費、申辦成功（雙欄）</td>
+                        <td><a href="sp8.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>11 - 進度查詢（空白、有資料 table）</td>
+                        <td><a href="sp.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>12 - 常見問答 LP table</td>
+                        <td><a href="lp.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>13 - CP 基本內頁</td>
+                        <td><a href="cp.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>護照用過的表單</td>
+                        <td><a href="form.htm" target="_blank"></a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -118,13 +175,27 @@
                     </tr>
                     <tr>
                         <td></td>
+                        <td>按鈕</td>
+                        <td><a href="btn.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
                         <td>找不到頁面</td>
                         <td><a href="404.htm" target="_blank"></a></td>
                     </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td>登入頁 - 旅行社 show QR code</td>
+                        <td><a href="login-qrcode.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>登入頁 - 個人</td>
+                        <td><a href="p_login.htm" target="_blank"></a></td>
+                    </tr> -->
                 </tbody>
             </table>
-
-            <h3>旅行社</h3>
+            <!-- <h3>旅行社</h3>
             <table>
                 <thead>
                     <tr>
@@ -240,52 +311,8 @@
                         <td>網路填表儀表板 20230725</td>
                         <td><a href="p_sp5.html" target="_blank"></a></td>
                     </tr>
-                    <!-- <tr>
-                        <td></td>
-                        <td>...</td>
-                        <td><a href="..."></a></td>
-                    </tr> -->
                 </tbody>
-            </table>
-
-            <h3>A4 PDF</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th class="num">編號</th>
-                        <th>頁面名稱</th>
-                        <th>檔案名稱</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td>戶所</td>
-                        <td><a href="pdf_1.html" target="_blank"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>簡式護照資料表</td>
-                        <td>
-                            <a href="pdf_2.html" target="_blank"></a><br>
-                            <a href="pdf_2-2.html" target="_blank"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>旅行社送件單</td>
-                        <td><a href="pdf_3.html" target="_blank"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>旅行社簡表</td>
-                        <td>
-                            <a href="pdf_4.html" target="_blank"></a><br>
-                            <a href="pdf_4-2.html" target="_blank"></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            </table> -->
         </div>
     </div>
     <a href="javascript:;" class="scrollToTop" >回頁首</a>

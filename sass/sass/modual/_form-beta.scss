@@ -18,8 +18,13 @@ $m-gutter: 4px;           // Flex grid system default margin
     // }
 }
 
-.R{ color: #bf0000; }
-.B{ color: #0541b1; }
+.R{
+    color: #bf0000 !important;
+    span{
+        border-color: #bf0000 !important;
+    }
+}
+.B{ color: #0541b1 !important; }
 
 // %mix-col {
 //     align-items: flex-start;
@@ -522,8 +527,8 @@ select::-ms-expand {
 
             // 調整標題
             .form_title{
-                color: #008175;
-                font-size: 120%;
+                color: $primaryColor;
+                font-size: 96%;
                 padding-top: .25em;
                 margin-top: .5em;
                 padding-left: 20px;
@@ -1818,7 +1823,7 @@ input[type="checkbox"]:focus {
     .upload_btn {
         position: absolute;
         overflow: hidden;
-        top: 10px;
+        // top: 10px;
         right: .5em;
         @extend %btn;
         @include btn_setting($form-focus, #FFF);

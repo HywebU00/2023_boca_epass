@@ -52,8 +52,8 @@ table {
         }
     }
     th {
-        background: url(../images/bg-table-border.jpg) left bottom repeat-x, #F3F3F3;
-        color: #333;
+        background: url(../images/bg-table-border.jpg) left bottom repeat-x, #4c4c4c;
+        color: #fff;
         // border: #DDD 1px solid;
         // border-bottom: #ddd 1px solid;
         text-align: center;
@@ -72,7 +72,14 @@ table {
 
     tr:last-child{
         td{ background: none !important; }
-        th{ background: #F3F3F3 !important; }
+        th{ background: #4c4c4c !important; }
+    }
+    caption {
+        font-weight: bold;
+        text-align: left;
+        // font-size: 1.125rem;
+        font-size: 0;
+        margin-bottom: 0.5em;
     }
 }
 .table_list {
@@ -114,6 +121,12 @@ table {
                 font-weight: bold;
                 color: #000;
             }
+        }
+    }
+    td{
+        text-align: left;
+        &.num, &.date{
+            text-align: center;
         }
     }
 }

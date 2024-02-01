@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>外交部領事事務局護照預約申請</title>
+    <title>CP</title>
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
     <!-- 燈箱facybox -->
-    <link rel="stylesheet" type="text/css" href="vendor/facybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/boca.css">
     <!-- favicon -->
@@ -36,32 +36,34 @@
                     <!-- 新增div navlist -->
                     <div class="navlist">
                         <ul>
-                            <li><a href="#">回首頁</a></li>
+                            <li><a href="#">常見問答</a></li>
                             <li><a href="#">外交部領事事務局</a></li>
                         </ul>
                     </div>
                 </nav>
                 <!-- navigation End -->
                 <h1>
-                    <a href="index.htm"><img src="images/logo.png" alt="外交部領事事務局護照預約申請" /><span>旅行社團件申辦護照<b>網路填表及照片上傳系統</b></span></a>
+                    <a href="index.htm"><img src="images/logo.png" alt="外交部領事事務局護照預約申請" /><span>有條件式線上申換護照系統</span></a>
                 </h1>
                 <!-- noscript -->
                 <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
                 </noscript>
                 <!-- menu Start -->
-                <nav class="menu" role="navigation" aria-label="About page">
+                <!-- <nav class="menu" role="navigation" aria-label="About page">
                     <ul>
                         <li><a href="#">簡表資料填寫</a></li>
                         <li><a href="#">簡表批次匯入</a></li>
                         <li><a href="#">護照暫存清單</a></li>
                         <li><a href="#">護照送件清單</a></li>
                     </ul>
-                </nav>
+                </nav> -->
                 <!-- menu End -->
-                <!-- user -->
+                <!-- user login -->
                 <section class="user_login">
                     <span>XXX</span>，您好！登入時間：<span>2021/10/10</span>
                     <button type="button" class="btn btn-primary btn-logout">登出</button>
+                    <a href="#" class="btn btn-primary">我要申辦</a>
+                    <a href="#" class="btn btn-primary">進度查詢</a>
                 </section>
             </div>
         </header>
@@ -106,12 +108,16 @@
                             <div class="pic">
                                 <!-- 此範例為4:3比例 -->
                                 <picture>
-                                    <source media="(min-width: 768px)" srcset="images/demo/01.jpg">
+                                    <!-- <source media="(min-width: 768px)" srcset="images/demo/01.jpg">
                                     <source media="(max-width: 767px)" srcset="images/demo/01.jpg">
                                     <img data-src="images/demo/01.jpg" class="lazy">
-                                    <noscript><img src="images/demo/01.jpg"></noscript>
+                                    <noscript><img src="images/demo/01.jpg"></noscript> -->
+                                    <a href="images/demo/01.jpg" data-fancybox="images" data-caption="圖說-有燈箱啦啦啦">
+                                        <img src="images/demo/01.jpg" alt="">
+                                        <noscript><img src="images/demo/01.jpg" alt=""></noscript>
+                                    </a>
                                 </picture>
-                                <span>圖說</span>
+                                <span>圖說-有燈箱啦啦啦</span>
                             </div>
                             <p><a href="#">連結文字樣式 </a>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。</p>
                             <h2>標題二</h2>
@@ -228,7 +234,7 @@
                                 </div>
                             </div> -->
                             <!-- fanybox cppic_slider lightbox_slider-->
-                             <div class="lightbox_slider_block">
+                            <div class="lightbox_slider_block">
                                 <h3 >燈箱照片</h3>
                                 <div class="cppic_slider">
                                     <div class="img-container">
@@ -352,6 +358,9 @@
                     </div>
                 </div>
             </div>
+            <!-- 裝飾的豆子 -->
+            <div class="bean_S rellax" data-rellax-speed="2"></div>
+            <div class="bean_M rellax" data-rellax-speed="3"></div>
         </div>
         <!-- footer Start-->
         <footer>
@@ -392,10 +401,15 @@
     <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
     <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
     <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
-    <!-- 燈箱facybox -->
-    <script src="vendor/facybox/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <!-- fancy -->
+    <script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
     <!-- hyUI -->
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>

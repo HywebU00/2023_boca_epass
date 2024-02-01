@@ -66,6 +66,7 @@ $btn-radius:.2em;
     // box-sizing: border-box;
     @include btn_setting;
     text-shadow:none;
+    border-radius: .2em;
     &:hover,
     &:focus {
         color: $btn-font-color;
