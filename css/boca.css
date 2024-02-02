@@ -1392,7 +1392,6 @@ a {
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #9d3400;
   cursor: pointer;
 }
 
@@ -1848,18 +1847,6 @@ kbd kbd {
   border-color: #35366d !important;
 }
 
-.btn-secondary2 {
-  background: #fff !important;
-  color: #d14024 !important;
-  border: solid 1px #dc4e32 !important;
-  text-shadow: none !important;
-}
-.btn-secondary2:hover, .btn-secondary2:focus {
-  color: #fff !important;
-  background: #dc4e32 !important;
-  border-color: #d14024 !important;
-}
-
 .btn-normal,
 .btn-reduce,
 .btn-increase {
@@ -1964,6 +1951,36 @@ kbd kbd {
   color: #fff !important;
   background: #dc4e32 !important;
   border: solid 1px #acacac !important;
+}
+
+.iconApply {
+  background: url(../images/basic/iconApply.svg) right 16px top 50% no-repeat #4e4fa0;
+  color: #fff;
+  background-size: 30px 30px;
+  padding-right: 3em;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.iconApply:hover, .iconApply:focus-visible {
+  color: #fff;
+  background: url(../images/basic/iconApply.svg) right 16px top 50% no-repeat #ee7700;
+  background-size: 30px 30px;
+  border: solid 1px #ee7700 !important;
+}
+
+.iconSchedule {
+  background: url(../images/basic/iconSchedule.svg) right 16px top 50% no-repeat #4e4fa0;
+  color: #fff;
+  background-size: 30px 30px;
+  padding-right: 3em;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.iconSchedule:hover, .iconSchedule:focus-visible {
+  color: #fff;
+  background: url(../images/basic/iconSchedule.svg) right 16px top 50% no-repeat #ee7700;
+  background-size: 30px 30px;
+  border: solid 1px #ee7700 !important;
 }
 
 .disabled, [disabled] {
@@ -2785,7 +2802,6 @@ em[tooltip] {
   text-decoration: none;
 }
 em[tooltip]:hover, em[tooltip]:focus {
-  color: #9d3400;
   cursor: pointer;
 }
 
@@ -6913,7 +6929,6 @@ table caption {
   position: relative;
 }
 .thumbnail a:hover, .thumbnail a:focus {
-  color: #9d3400;
   cursor: pointer;
 }
 .thumbnail a:focus:before {
@@ -8742,8 +8757,8 @@ ol.list_info li {
     display: none;
   }
   .Login .control_panle .container .passport {
-    top: -140px;
-    right: -180px;
+    top: -70px;
+    right: -120px;
   }
   .Login .control_panle .container .passport img {
     transform: scale(0.7);
@@ -9040,18 +9055,26 @@ ol.list_info li {
   padding-top: 110px;
 }
 .Login .link a.apply {
-  background: #ee7700;
+  background: url(../images/basic/iconGo.svg) right 14% top 50% no-repeat #ee7700;
+  background-size: 56px 56px;
   color: #fff;
   width: 320px;
   height: 100px;
   font-size: 1.125em;
   line-height: 100px;
   border-radius: 100px;
+  box-shadow: inset 0 0 0 0 #ff9224;
   position: relative;
   z-index: 3;
+  transition: 0.3s;
 }
 .Login .link a.apply:before {
   display: none;
+}
+.Login .link a.apply:hover, .Login .link a.apply:focus-visible {
+  box-shadow: inset 0 0 0 10px #ff9224;
+  background: url(../images/basic/iconGo.svg) right 20px top 50% no-repeat #ee7700;
+  background-size: 56px 56px;
 }
 .Login .link a:hover:before, .Login .link a:focus-visible:before {
   background: #ee7700;
@@ -9059,7 +9082,6 @@ ol.list_info li {
 }
 @media screen and (max-width: 767px) {
   .Login .link {
-    padding-top: 1em;
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
@@ -9101,6 +9123,17 @@ ol.list_info li {
   padding: 1em 2em;
   border-radius: 0 30px 30px 0;
   flex: 0 0 150px;
+  position: relative;
+}
+.Login .applyInfo .setFlex b::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 12px solid #8688e9;
+  border-top: 12px solid #8688e9;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
 }
 .Login .applyInfo .setFlex ol {
   display: flex;
@@ -9232,10 +9265,24 @@ ol.list_info li {
 }
 .Login .applyInfo a,
 .Login .prepareInfo a {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-  font-weight: bold;
+  position: relative;
 }
+.Login .applyInfo a:before,
+.Login .prepareInfo a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -3px;
+  background: #d04500;
+  transition: 0.3s;
+}
+.Login .applyInfo a:hover:before, .Login .applyInfo a:focus:before,
+.Login .prepareInfo a:hover:before,
+.Login .prepareInfo a:focus:before {
+  width: 100%;
+}
+
 .innerTitle {
   display: block;
   font-size: 112.5%;
@@ -9609,7 +9656,7 @@ ol.list_info li {
 
 .btn-logout {
   border-radius: 40px;
-  padding: 3px 20px;
+  padding: 0.5em 20px;
   background: #474747 !important;
   border: solid 1px #65656E !important;
 }
@@ -11708,6 +11755,25 @@ a.more {
   text-align: center;
   text-decoration: none !important;
   font-weight: normal !important;
+  transition: 0.3s;
+  position: relative;
+}
+a.more::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #fff !important;
+  left: 50%;
+  bottom: 10px !important;
+  transform: translate(-50%);
+  transition: 0.3s;
+}
+a.more:hover, a.more:focus-visible {
+  background: #4e4fa0;
+}
+a.more:hover::before, a.more:focus-visible::before {
+  width: 60px !important;
 }
 
 .demosection [class^=col] {
@@ -11785,7 +11851,6 @@ h1.title, h2.title {
   text-decoration: none;
 }
 .cp a:hover, .cp a:focus {
-  color: #9d3400;
   cursor: pointer;
 }
 

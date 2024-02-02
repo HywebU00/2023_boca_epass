@@ -125,7 +125,6 @@ $btn-radius:.2em;
     &:focus {
         background: darken($primaryColor, 10)!important;
         border: solid 1px $primaryColor!important;
-
     }
 }
 // 次要按鈕
@@ -141,18 +140,18 @@ $btn-radius:.2em;
         border-color: darken($primaryColor, 15)!important;
     }
 }
-.btn-secondary2{
-    background: #fff !important;
-    color: darken(#dc4e32, 5)!important;
-    border: solid 1px #dc4e32!important;
-    text-shadow: none !important;
-    &:hover,
-    &:focus {
-        color: #fff!important;
-        background: #dc4e32!important;
-        border-color: darken(#dc4e32, 5)!important;
-    }
-}
+// .btn-secondary2{
+//     background: #fff !important;
+//     color: darken(#dc4e32, 5)!important;
+//     border: solid 1px #dc4e32!important;
+//     text-shadow: none !important;
+//     &:hover,
+//     &:focus {
+//         color: #fff!important;
+//         background: #dc4e32!important;
+//         border-color: darken(#dc4e32, 5)!important;
+//     }
+// }
 
 // 一般按鈕
 .btn-normal,
@@ -265,7 +264,37 @@ $btn-radius:.2em;
         border: solid 1px #acacac!important;
     }
 }
-
+// 申請
+.iconApply{
+    background: url(../images/basic/iconApply.svg) right 16px top 50% no-repeat $primaryColor;
+    color: #fff;
+    background-size: 30px 30px;
+    padding-right: 3em;
+    border-radius: 6px;
+    transition: .3s;
+    &:hover,
+    &:focus-visible {
+        color: #fff;
+        background: url(../images/basic/iconApply.svg) right 16px top 50% no-repeat #ee7700;
+        background-size: 30px 30px;
+        border: solid 1px #ee7700!important;
+    }
+}
+.iconSchedule{
+    background: url(../images/basic/iconSchedule.svg) right 16px top 50% no-repeat $primaryColor;
+    color: #fff;
+    background-size: 30px 30px;
+    padding-right: 3em;
+    border-radius: 6px;
+    transition: .3s;
+    &:hover,
+    &:focus-visible {
+        color: #fff;
+        background: url(../images/basic/iconSchedule.svg) right 16px top 50% no-repeat #ee7700;
+        background-size: 30px 30px;
+        border: solid 1px #ee7700!important;
+    }
+}
 .disabled, [disabled] {
     // opacity: .75;
     cursor: not-allowed!important;

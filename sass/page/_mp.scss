@@ -11,6 +11,27 @@ a.more {
     text-align: center;
     text-decoration: none !important;
     font-weight: normal !important;
+    transition: .3s;
+
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background: #fff !important;
+        left: 50%;
+        bottom: 10px !important;
+        transform: translate(-50%);
+        transition: .3s;
+    }
+
+    &:hover, &:focus-visible{
+        background: $primaryColor;
+        &::before{
+            width: 60px !important;
+        }
+    }
 }
 // a.more {
 //     display: block;

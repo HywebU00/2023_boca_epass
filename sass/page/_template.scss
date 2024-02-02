@@ -387,8 +387,8 @@ ol.list_info{
                 }
                 // 護照
                 .passport{
-                    top: -140px;
-                    right: -180px;
+                    top: -70px;
+                    right: -120px;
                     img{
                         transform: scale(.7);
                     }
@@ -823,20 +823,27 @@ ol.list_info{
             }
             &.apply{
                 // 我要申換護照
-                background: $lightColor;
+                background: url(../images/basic/iconGo.svg) right 14% top 50% no-repeat $lightColor;
+                background-size: 56px 56px;
                 color: #fff;
                 width: 320px;
                 height: 100px;
                 font-size: 1.125em;
                 line-height: 100px;
                 border-radius: 100px;
+                box-shadow: inset 0 0 0 0 #ff9224;
                 position: relative;
                 z-index: 3;
+                transition: .3s;
                 &:before{
                     display: none;
                 }
+                &:hover, &:focus-visible{
+                    box-shadow: inset 0 0 0 10px #ff9224;
+                    background: url(../images/basic/iconGo.svg) right 20px top 50% no-repeat $lightColor;
+                    background-size: 56px 56px;
+                }
             }
-
             &:hover, &:focus-visible{
                 &:before{
                     background: $lightColor;
@@ -845,7 +852,6 @@ ol.list_info{
             }
         }
         @include screen('mobile'){
-            padding-top: 1em;
             flex-wrap: wrap;
             justify-content: space-evenly;
             position: relative;
@@ -887,6 +893,17 @@ ol.list_info{
                 padding: 1em 2em;
                 border-radius: 0 30px 30px 0;
                 flex: 0 0 150px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    border-left: 12px solid #8688e9;
+                    border-top: 12px solid #8688e9;
+                    border-right: 12px solid transparent;
+                    border-bottom: 12px solid transparent;
+                }
             }
             ol{
                 display: flex;
@@ -1020,11 +1037,25 @@ ol.list_info{
             }
         }
         a{
-            text-decoration: underline;
-            text-underline-offset: 8px;
-            font-weight: bold;
+            // text-decoration: underline;
+            // text-underline-offset: 8px;
+            // font-weight: bold;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1px;
+                bottom: -3px;
+                background: $aColor;
+                transition: .3s;
+            }
+
             &:hover, &:focus{
                 // text-decoration: none;
+                &:before{
+                    width: 100%;
+                }
             }
         }
     }
@@ -1506,7 +1537,7 @@ ol.list_info{
 // 按鈕
 .btn-logout {
     border-radius: 40px;
-    padding: 3px 20px;
+    padding: .5em 20px;
     background: #474747 !important;
     border: solid 1px #65656E !important;
 }
