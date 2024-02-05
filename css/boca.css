@@ -10072,20 +10072,6 @@ a.tb-view:hover, a.tb-view:focus {
 .info-review > .grp.cardInfo > .content {
   word-break: break-all;
 }
-.info-review > .grp.cardInfo > .content > section:last-child,
-.info-review > .grp.cardInfo > .content > section:last-child > .grp:nth-last-child(3) {
-  position: relative;
-}
-.info-review > .grp.cardInfo > .content > section:last-child:after,
-.info-review > .grp.cardInfo > .content > section:last-child > .grp:nth-last-child(3):after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background: #fff;
-  left: 0;
-  bottom: -2px;
-}
 @media screen and (max-width: 991px) {
   .info-review > .grp.cardInfo {
     padding: 1.5em 2em;
@@ -10107,6 +10093,10 @@ a.tb-view:hover, a.tb-view:focus {
 .info-review > .grp > .content .grp {
   padding: 0.75em 0;
   border-bottom: 1px solid #c7c7c7;
+}
+.info-review > .grp > .content .grp.noline {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
 .info-review > .grp > .content .grp.foto {
   border-bottom: 0;
