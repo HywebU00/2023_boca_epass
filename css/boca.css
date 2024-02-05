@@ -6471,6 +6471,12 @@ table caption {
 .table_list td.num, .table_list td.date {
   text-align: center;
 }
+.table_list td a {
+  color: #222;
+}
+.table_list td a:hover, .table_list td a:focus {
+  color: #d04500;
+}
 
 .fix_th_table {
   margin: 1em 0;
@@ -9817,6 +9823,22 @@ ol.list_info li {
   padding-bottom: 4px;
   border-bottom: 3px solid #aaa;
 }
+.caption a {
+  white-space: nowrap;
+  position: relative;
+}
+.caption a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -3px;
+  background: #d04500;
+  transition: 0.3s;
+}
+.caption a:hover:before, .caption a:focus:before {
+  width: 100%;
+}
 .caption.announce .title {
   text-align: center;
   font-size: 160%;
@@ -10463,6 +10485,27 @@ b,
 b.R,
 b.B {
   display: initial;
+  margin: 0 2px;
+}
+
+p a,
+li a {
+  position: relative;
+}
+p a:before,
+li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -3px;
+  background: #d04500;
+  transition: 0.3s;
+}
+p a:hover:before, p a:focus:before,
+li a:hover:before,
+li a:focus:before {
+  width: 100%;
 }
 
 .foto-upload {

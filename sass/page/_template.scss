@@ -1692,7 +1692,26 @@ ol.list_info{
             border-bottom: 3px solid #aaa;
         }
     }
+    a{
+        white-space:nowrap;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -3px;
+            background: $aColor;
+            transition: .3s;
+        }
 
+        &:hover, &:focus{
+            // text-decoration: none;
+            &:before{
+                width: 100%;
+            }
+        }
+    }
     &.announce {
         .title {
             text-align: center;
@@ -2271,6 +2290,26 @@ b.B {
     // display: inline-block;
     display: initial;
     // padding: .15em .25em;
+    margin: 0 2px;
+}
+p a,
+li a{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -3px;
+        background: $aColor;
+        transition: .3s;
+    }
+    &:hover, &:focus{
+        // text-decoration: none;
+        &:before{
+            width: 100%;
+        }
+    } 
 }
 
 // 照片上傳 
