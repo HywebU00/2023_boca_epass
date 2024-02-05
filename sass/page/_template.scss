@@ -1518,6 +1518,23 @@ ol.list_info{
                     text-align: center;
                     padding: 2em 0;
                 }
+                .sample{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: nowrap;
+                    background: #fff;
+                    padding: 1.5em;
+                    border-radius: 10px;
+                    img{
+                        flex: 0 0 30%;
+                        max-width: 30%;
+                        border: 1px solid #eee;
+                    }
+                    .col{
+                        flex: 1 1 70%;
+                        padding-left: 2em;
+                    }
+                }
             }
         }
 
@@ -1528,6 +1545,19 @@ ol.list_info{
                 .white_zone {
                     padding: 1em;
                     border: 1px solid #fff;
+
+                    .sample{
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        img{
+                            flex: 0 0 200px;
+                            max-width: 200px;
+                        }
+                        .col{
+                            flex: 1 1 100%;
+                            padding-left: 0;
+                        }
+                    }
                 }
             }
         }
