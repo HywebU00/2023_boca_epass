@@ -337,7 +337,7 @@ ol.list_info{
                 z-index: -2;
             }
             .passport{
-                right: -120px;
+                right: -140px;
                 top: 90px;
                 z-index: 2;
             }
@@ -815,18 +815,22 @@ ol.list_info{
             &.iconSearch{
                 background: url(../images/basic/iconSearch.svg) 50% 18px no-repeat;
             }
+            &.iconReceipt{
+                background: url(../images/basic/iconReceipt.svg) 50% 18px no-repeat;
+            }
             &.iconInfo,
             &.iconData,
-            &.iconSearch{
+            &.iconSearch,
+            &.iconReceipt{
                 background-size: 60%;
                 padding-top: 110px;
             }
             &.apply{
                 // 我要申換護照
-                background: url(../images/basic/iconGo.svg) right 14% top 50% no-repeat $lightColor;
+                background: url(../images/basic/iconGo.svg) right 12% top 50% no-repeat $lightColor;
                 background-size: 56px 56px;
                 color: #fff;
-                width: 320px;
+                width: 300px;
                 height: 100px;
                 font-size: 1.125em;
                 line-height: 100px;
@@ -966,9 +970,9 @@ ol.list_info{
             .col{
                 flex: 0 0 32%;
                 border: 1px solid #ddd;
-                padding: 2em;
+                padding: 2em 1.5em 14em 2em;
                 border-radius: 24px;
-                padding-bottom: 14em;
+                // padding-bottom: 14em;
                 position: relative;
                 b{
                     color: $primaryColor;
@@ -985,6 +989,10 @@ ol.list_info{
                     margin: 2em 0 0;
                     font-size: 1.125em;
                     min-height: 60px;
+
+                    ul{
+                        padding-left: 0;
+                    }
                 }
                 p{
                     margin-top: .5em;
