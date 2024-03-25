@@ -999,13 +999,26 @@ ol.list_info{
                 }
 
                 &:nth-child(1){
-                    background: url(../images/basic/img_prepareInfo1.png) right bottom no-repeat #f1f2f5;;
+                    background: url(../images/basic/img_prepareInfo1.png) right bottom no-repeat #f1f2f5;
+                    li:last-child{
+                        padding-top: 26px;
+                        position: relative;
+                        &:before{
+                            content: '或';
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            font-weight: normal;
+                            color: #222;
+                            font-size: 90%
+                        }
+                    }
                 }
                 &:nth-child(2){
-                    background: url(../images/basic/img_prepareInfo2.png) right bottom no-repeat #f1f2f5;;
+                    background: url(../images/basic/img_prepareInfo2.png) right bottom no-repeat #f1f2f5;
                 }
                 &:nth-child(3){
-                    background: url(../images/basic/img_prepareInfo3.png) right bottom no-repeat #f1f2f5;;
+                    background: url(../images/basic/img_prepareInfo3.png) right bottom no-repeat #f1f2f5;
                 }
             }
             @include screen('mobile'){

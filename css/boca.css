@@ -9234,6 +9234,19 @@ ol.list_info li {
 .Login .prepareInfo .setFlex .col:nth-child(1) {
   background: url(../images/basic/img_prepareInfo1.png) right bottom no-repeat #f1f2f5;
 }
+.Login .prepareInfo .setFlex .col:nth-child(1) li:last-child {
+  padding-top: 26px;
+  position: relative;
+}
+.Login .prepareInfo .setFlex .col:nth-child(1) li:last-child:before {
+  content: "或";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: normal;
+  color: #222;
+  font-size: 90%;
+}
 .Login .prepareInfo .setFlex .col:nth-child(2) {
   background: url(../images/basic/img_prepareInfo2.png) right bottom no-repeat #f1f2f5;
 }
