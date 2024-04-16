@@ -1626,6 +1626,11 @@ ol.list_info{
                 .result_info{
                     text-align: center;
                     padding: 2em 0;
+                    tr.inner{
+                        td{
+                            background: #f7f7f7 !important;
+                        }
+                    }
                 }
                 .sample{
                     display: flex;

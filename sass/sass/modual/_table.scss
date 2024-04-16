@@ -50,6 +50,9 @@ table {
         a {
             word-break: break-all;
         }
+        &._align_L{
+            text-align: left;
+        }
     }
     th {
         background: url(../images/bg-table-border.jpg) left bottom repeat-x, #4c4c4c;

@@ -6415,6 +6415,9 @@ table td {
 table td a {
   word-break: break-all;
 }
+table td._align_L {
+  text-align: left;
+}
 table th {
   background: url(../images/bg-table-border.jpg) left bottom repeat-x, #4c4c4c;
   color: #fff;
@@ -9732,6 +9735,9 @@ ol.list_info li {
 .Page .innerpage > .container .white_zone .result_info {
   text-align: center;
   padding: 2em 0;
+}
+.Page .innerpage > .container .white_zone .result_info tr.inner td {
+  background: #f7f7f7 !important;
 }
 .Page .innerpage > .container .white_zone .sample {
   display: flex;
