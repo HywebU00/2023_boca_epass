@@ -14,11 +14,21 @@ $(function() {
     $('.timer').siblings('.breadcrumb').addClass('hasTimer');
 
     // 環境檢測 position 斷點 style 設定
+    if ($('.alert').length > 0) {
+        $('.main').css('padding-top', '0');
+    } else {
+        $('.main').css('padding-top', '60');
+    }
     $(window).resize(function() {
         if ($(window).width() < 768) {
-        $('.loginInfo > #openModal').css('position', 'relative');
+            $('.loginInfo > #openModal').css('position', 'relative');
+            if ($('.alert').length > 0) {
+                $('.main').css('padding-top', '0');
+            } else {
+                $('.main').css('padding-top', '60px');
+            }
         } else {
-        $('.loginInfo > #openModal').css('position', 'absolute');
+            $('.loginInfo > #openModal').css('position', 'absolute');
         }
     });
 
