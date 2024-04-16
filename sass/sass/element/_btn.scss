@@ -295,6 +295,21 @@ $btn-radius:.2em;
         border: solid 1px #ee7700!important;
     }
 }
+.iconState{
+    background: url(../images/basic/iconState.svg) right 16px top 50% no-repeat $primaryColor;
+    color: #fff;
+    background-size: 30px 30px;
+    padding-right: 3em;
+    border-radius: 6px;
+    transition: .3s;
+    &:hover,
+    &:focus-visible {
+        color: #fff;
+        background: url(../images/basic/iconState.svg) right 16px top 50% no-repeat #ee7700;
+        background-size: 30px 30px;
+        border: solid 1px #ee7700!important;
+    }
+}
 .disabled, [disabled] {
     // opacity: .75;
     cursor: not-allowed!important;

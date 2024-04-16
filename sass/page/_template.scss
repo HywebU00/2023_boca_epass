@@ -258,6 +258,48 @@ ol.list_info{
     .container {
         // max-width: 1000px;
     }
+    .alert{
+        // background: #ee7700;
+        background: #fff;
+        box-shadow: rgb(208 231 239) 0px 48px 100px 0px;
+
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            background: #d04500;
+        }
+
+        p{
+            margin: 0;
+            padding: 1em 0;
+            font-size: 120%;
+        }
+        .container {
+            padding-left: 10em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 1.4;
+
+            // 波哥
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 2em;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 110px;
+                height: 110px;
+                background: url(../images/alert_icon.png) 50% 50% no-repeat;
+                background-size: contain;
+                animation: Shake .6s ease infinite;
+            }
+        }
+    }
     .header {
         h1 {
             // margin: initial;
@@ -284,9 +326,11 @@ ol.list_info{
                         a {
                             color: #fff;
                             padding: 0 8px 0 2.5em;
+                            border-radius: 4px;
                             line-height: 1.8;
                             background: url(../images/icon-arrow.svg) 10px 50% no-repeat, transparent;
                             background-size: 12px 12px;
+                            transition: .3s ease;
 
                             &:hover,
                             &:focus {
@@ -997,6 +1041,17 @@ ol.list_info{
                 p{
                     margin-top: .5em;
                 }
+                a{
+                    // &::before{
+                    //     display: none;
+                    // }
+                    // text-decoration: none;
+                    // text-underline-offset: 6px;
+                    // transition: .6s ease;
+                    // &:hover, &:focus-visible{
+                    //     text-decoration: underline;
+                    // }
+                }
 
                 &:nth-child(1){
                     background: url(../images/basic/img_prepareInfo1.png) right bottom no-repeat #f1f2f5;
@@ -1019,6 +1074,9 @@ ol.list_info{
                 }
                 &:nth-child(3){
                     background: url(../images/basic/img_prepareInfo3.png) right bottom no-repeat #f1f2f5;
+                    ul{
+                        padding-left: 0;
+                    }
                 }
             }
             @include screen('mobile'){
@@ -1061,26 +1119,39 @@ ol.list_info{
             // text-decoration: underline;
             // text-underline-offset: 8px;
             // font-weight: bold;
-            position: relative;
-            &:before{
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 1px;
-                bottom: -3px;
-                background: $aColor;
-                transition: .3s;
-            }
+            // position: relative;
+            // &:before{
+            //     content: "";
+            //     position: absolute;
+            //     width: 0;
+            //     height: 1px;
+            //     bottom: -3px;
+            //     background: $aColor;
+            //     transition: .3s;
+            // }
 
-            &:hover, &:focus{
-                // text-decoration: none;
-                &:before{
-                    width: 100%;
-                }
-            }
+            // &:hover, &:focus{
+            //     // text-decoration: none;
+            //     &:before{
+            //         width: 100%;
+            //     }
+            // }
         }
     }
 }
+
+@keyframes Shake {
+    0% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(-53%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
 .innerTitle{
     display: block;
     font-size: 112.5%;
@@ -2348,24 +2419,32 @@ b.B {
     // padding: .15em .25em;
     margin: 0 2px;
 }
+
+// 連結 hover 底線效果
 p a,
 li a{
-    position: relative;
-    &:before{
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 1px;
-        bottom: -3px;
-        background: $aColor;
-        transition: .3s;
+    text-decoration: none;
+    text-underline-offset: 6px;
+    transition: .6s ease;
+    &:hover, &:focus-visible{
+        text-decoration: underline;
     }
-    &:hover, &:focus{
-        // text-decoration: none;
-        &:before{
-            width: 100%;
-        }
-    } 
+    // position: relative;
+    // &:before{
+    //     content: "";
+    //     position: absolute;
+    //     width: 0;
+    //     height: 1px;
+    //     bottom: -3px;
+    //     background: $aColor;
+    //     transition: .3s;
+    // }
+    // &:hover, &:focus{
+    //     // text-decoration: none;
+    //     &:before{
+    //         width: 100%;
+    //     }
+    // } 
 }
 
 // 照片上傳 

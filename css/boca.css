@@ -1983,6 +1983,21 @@ kbd kbd {
   border: solid 1px #ee7700 !important;
 }
 
+.iconState {
+  background: url(../images/basic/iconState.svg) right 16px top 50% no-repeat #4e4fa0;
+  color: #fff;
+  background-size: 30px 30px;
+  padding-right: 3em;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.iconState:hover, .iconState:focus-visible {
+  color: #fff;
+  background: url(../images/basic/iconState.svg) right 16px top 50% no-repeat #ee7700;
+  background-size: 30px 30px;
+  border: solid 1px #ee7700 !important;
+}
+
 .disabled, [disabled] {
   cursor: not-allowed !important;
   text-shadow: none;
@@ -8654,6 +8669,43 @@ ol.list_info li {
   padding: 0.3em 0;
 }
 
+.Login .alert {
+  background: #fff;
+  box-shadow: rgb(208, 231, 239) 0px 48px 100px 0px;
+  position: relative;
+}
+.Login .alert:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background: #d04500;
+}
+.Login .alert p {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 120%;
+}
+.Login .alert .container {
+  padding-left: 10em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  position: relative;
+}
+.Login .alert .container:before {
+  content: "";
+  position: absolute;
+  left: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 110px;
+  background: url(../images/alert_icon.png) 50% 50% no-repeat;
+  background-size: contain;
+  animation: Shake 0.6s ease infinite;
+}
 .Login .header h1 {
   height: inherit;
 }
@@ -8673,9 +8725,11 @@ ol.list_info li {
 .Login .header .navigation .navlist ul li a {
   color: #fff;
   padding: 0 8px 0 2.5em;
+  border-radius: 4px;
   line-height: 1.8;
   background: url(../images/icon-arrow.svg) 10px 50% no-repeat, transparent;
   background-size: 12px 12px;
+  transition: 0.3s ease;
 }
 .Login .header .navigation .navlist ul li a:hover, .Login .header .navigation .navlist ul li a:focus {
   background: url(../images/icon-arrow.svg) 10px 50% no-repeat, #000;
@@ -9253,6 +9307,9 @@ ol.list_info li {
 .Login .prepareInfo .setFlex .col:nth-child(3) {
   background: url(../images/basic/img_prepareInfo3.png) right bottom no-repeat #f1f2f5;
 }
+.Login .prepareInfo .setFlex .col:nth-child(3) ul {
+  padding-left: 0;
+}
 @media screen and (max-width: 767px) {
   .Login .prepareInfo .setFlex {
     flex-wrap: wrap;
@@ -9287,26 +9344,17 @@ ol.list_info li {
   left: 220px;
   background: #fff;
 }
-.Login .applyInfo a,
-.Login .prepareInfo a {
-  position: relative;
+@keyframes Shake {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-53%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
 }
-.Login .applyInfo a:before,
-.Login .prepareInfo a:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -3px;
-  background: #d04500;
-  transition: 0.3s;
-}
-.Login .applyInfo a:hover:before, .Login .applyInfo a:focus:before,
-.Login .prepareInfo a:hover:before,
-.Login .prepareInfo a:focus:before {
-  width: 100%;
-}
-
 .innerTitle {
   display: block;
   font-size: 112.5%;
@@ -10527,22 +10575,14 @@ b.B {
 
 p a,
 li a {
-  position: relative;
+  text-decoration: none;
+  text-underline-offset: 6px;
+  transition: 0.6s ease;
 }
-p a:before,
-li a:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -3px;
-  background: #d04500;
-  transition: 0.3s;
-}
-p a:hover:before, p a:focus:before,
-li a:hover:before,
-li a:focus:before {
-  width: 100%;
+p a:hover, p a:focus-visible,
+li a:hover,
+li a:focus-visible {
+  text-decoration: underline;
 }
 
 .foto-upload {

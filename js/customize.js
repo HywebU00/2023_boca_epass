@@ -13,6 +13,15 @@ $(function() {
     // timer
     $('.timer').siblings('.breadcrumb').addClass('hasTimer');
 
+    // 環境檢測 position 斷點 style 設定
+    $(window).resize(function() {
+        if ($(window).width() < 768) {
+        $('.loginInfo > #openModal').css('position', 'relative');
+        } else {
+        $('.loginInfo > #openModal').css('position', 'absolute');
+        }
+    });
+
     // 月份輪播
     $('.multipleSlider').slick({
         infinite: true,
