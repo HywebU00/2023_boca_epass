@@ -9384,7 +9384,6 @@ ol.list_info li {
 .styleBox {
   background: #fff;
   padding: 1em 1.75em;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .styleBox .qrcode {
   display: flex;
