@@ -158,6 +158,14 @@ body {
         //     url(../images/bg-blur-ball.png) 50% 0 no-repeat,
         //     #e2e8ee;
         background-attachment: fixed;
+        .bean_M{
+            // 左邊
+            background: url(../images/deco-been-1-inner.png) no-repeat;
+        }
+        .bean_S{
+            // 右邊小豆
+            background: url(../images/deco-been-2-inner.png) no-repeat;
+        }
     }
 }
 
@@ -1035,7 +1043,7 @@ ol.list_info{
                 border-radius: 24px;
                 // padding-bottom: 14em;
                 position: relative;
-                b{
+                > b{
                     color: $primaryColor;
                     font-family: system-ui;
                     font-size: 4.5em;
@@ -3411,6 +3419,15 @@ li a{
                         color: #fff;
                     }
                 }
+                &.passed{
+                    color:#aaabcb; 
+                    &:before{
+                        background: #aaabcb;
+                        border-color: #aaabcb;
+                        color: #fff;
+                    }
+                }
+
             }
         }
 

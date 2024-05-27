@@ -8601,6 +8601,14 @@ body.Page {
   background: url(../images/bg-blur-ball.png) 50% 0 no-repeat, #e2e8ee;
   background-attachment: fixed;
 }
+html.Page .bean_M,
+body.Page .bean_M {
+  background: url(../images/deco-been-1-inner.png) no-repeat;
+}
+html.Page .bean_S,
+body.Page .bean_S {
+  background: url(../images/deco-been-2-inner.png) no-repeat;
+}
 
 header .container,
 footer .container {
@@ -9283,7 +9291,7 @@ ol.list_info li {
   border-radius: 24px;
   position: relative;
 }
-.Login .prepareInfo .setFlex .col b {
+.Login .prepareInfo .setFlex .col > b {
   color: #4e4fa0;
   font-family: system-ui;
   font-size: 4.5em;
@@ -11855,6 +11863,14 @@ li a:focus-visible {
 }
 .innerpage .left_block ol.steps li.now:before {
   background: #4e4fa0;
+  color: #fff;
+}
+.innerpage .left_block ol.steps li.passed {
+  color: #aaabcb;
+}
+.innerpage .left_block ol.steps li.passed:before {
+  background: #aaabcb;
+  border-color: #aaabcb;
   color: #fff;
 }
 .innerpage .left_block.hidden + .center_block {
