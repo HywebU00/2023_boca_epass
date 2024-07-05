@@ -8794,17 +8794,14 @@ ol.list_info li {
   top: -90px;
 }
 .Login .control_panle .container .bird_f {
-  right: 50px;
+  right: -68px;
   top: -140px;
   z-index: -2;
 }
 .Login .control_panle .container .passport {
   right: -140px;
-  top: 90px;
+  top: 120px;
   z-index: 2;
-}
-.Login .control_panle .container .passport img {
-  filter: drop-shadow(-20px 160px 1.5rem rgba(0, 0, 0, 0.45));
 }
 .Login .control_panle .container:after {
   content: "";
