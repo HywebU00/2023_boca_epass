@@ -409,6 +409,9 @@ ol.list_info{
                 right: -140px;
                 top: 90px;
                 z-index: 2;
+                img{
+                    filter: drop-shadow(-20px 160px 1.5rem rgba(0, 0, 0, .45));
+                }
             }
             // 主圖
             &:after {

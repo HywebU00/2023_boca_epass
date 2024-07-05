@@ -8803,6 +8803,9 @@ ol.list_info li {
   top: 90px;
   z-index: 2;
 }
+.Login .control_panle .container .passport img {
+  filter: drop-shadow(-20px 160px 1.5rem rgba(0, 0, 0, 0.45));
+}
 .Login .control_panle .container:after {
   content: "";
   position: absolute;
