@@ -9994,16 +9994,32 @@ ol.list_info li {
 
 .rwd_YT {
   position: relative;
+}
+.rwd_YT:after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8em);
+  height: 130%;
+  background: url(../images/bg-YT.png) 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: -4em;
+  z-index: -1;
+}
+.rwd_YT .wrap {
+  position: relative;
   width: 512px;
   background: #eee;
   overflow: hidden;
+  margin: auto;
+  margin-right: 39%;
 }
-.rwd_YT:before {
+.rwd_YT .wrap:before {
   display: inline-block;
   content: "";
   padding-top: 66.6666666667%;
 }
-.rwd_YT img {
+.rwd_YT .wrap img {
   display: block;
   position: absolute;
   top: 0;
@@ -10014,7 +10030,7 @@ ol.list_info li {
   height: 100%;
   margin: auto;
 }
-.rwd_YT iframe {
+.rwd_YT .wrap iframe {
   position: absolute;
   width: 100% !important;
   height: 100% !important;
@@ -10025,6 +10041,9 @@ ol.list_info li {
 }
 @media screen and (max-width: 991px) {
   .rwd_YT {
+    margin-right: initial;
+  }
+  .rwd_YT .wrap {
     width: 100%;
   }
 }

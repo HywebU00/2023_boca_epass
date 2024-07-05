@@ -1897,21 +1897,42 @@ ol.list_info{
     border-bottom: 1px solid #ddd;
 }
 .rwd_YT{
+    // background: pink;
     position: relative;
-    width: 512px;
-    background: #eee;
-    @include aspect-ratio(3, 2);
-    iframe {
+    &:after{
+        content: '';
         position: absolute;
-        width: 100% !important;
-        height: 100% !important;
+        width: calc(100% + 8em);
+        height: 130%;
+        // background: pink;
+        background: url(../images/bg-YT.png) 50% no-repeat;
+        background-size: cover;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        left: -4em;
+        z-index: -1;
+    }
+    .wrap{
+        position: relative;
+        width: 512px;
+        background: #eee;
+        @include aspect-ratio(3, 2);
+        margin: auto;
+        margin-right: 39%;
+        iframe {
+            position: absolute;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
     }
     @include screen('tablet'){
-        width: 100%;
+        margin-right: initial;
+        .wrap{
+            width: 100%;
+        }
     }
 }
 
