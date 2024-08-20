@@ -857,6 +857,12 @@ ol.list_info{
         display: flex;
         padding: 2em 0 3em;
         flex-wrap: nowrap;
+        &._center{
+            justify-content: center;
+            a.apply{
+                width: 420px;
+            }
+        }
         a{
             text-align: center;
             margin-right: 20px;
