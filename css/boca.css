@@ -9110,6 +9110,8 @@ ol.list_info li {
 }
 .Login .link._center a.apply {
   width: 420px;
+  font-size: 1.65em;
+  letter-spacing: 3px;
 }
 .Login .link a {
   text-align: center;
