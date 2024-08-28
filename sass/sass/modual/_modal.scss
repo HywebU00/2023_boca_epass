@@ -38,7 +38,8 @@
 
 
 // 領務局
-.modal {
+.modal,
+.modal_light {
     position: fixed;
     display: none;
     width: 60%;
@@ -60,7 +61,6 @@
         text-align: center;
         margin-top: 0;
     }
-
     .modal_content{
         height: 100%;
         overflow-x: hidden;
@@ -81,7 +81,6 @@
             }
         }
     }
-
     .close {
         position: absolute;
         top: 16px;
@@ -100,13 +99,23 @@
             cursor: pointer;
         }
     }
-
     li a{  display: initial; }
+
+    // 文字內容少的
+    &._light{
+        height: auto;
+        padding: 3em 1.5em;
+    }
 
     @include screen('mobile') {
         width: 90%;
         margin-left: -45%;
     }
+}
+// 文字內容少的
+.modal_light{
+    height: auto;
+    padding: 3em 1.5em;
 }
 @keyframes scaleUp {
     0% {

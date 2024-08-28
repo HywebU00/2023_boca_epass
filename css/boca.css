@@ -7004,7 +7004,8 @@ table caption {
   margin: 0.1em auto 1em;
 }
 
-.modal {
+.modal,
+.modal_light {
   position: fixed;
   display: none;
   width: 60%;
@@ -7021,33 +7022,39 @@ table caption {
   overflow-y: hidden;
   animation: scaleUp 0.5s ease-out;
 }
-.modal h2 {
+.modal h2,
+.modal_light h2 {
   border-bottom: 1px solid #4e4fa0;
   padding-bottom: 0.5em;
   text-align: center;
   margin-top: 0;
 }
-.modal .modal_content {
+.modal .modal_content,
+.modal_light .modal_content {
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.modal .modal_content .center_box {
+.modal .modal_content .center_box,
+.modal_light .modal_content .center_box {
   text-align: center;
   padding: 1em 0;
 }
-.modal .modal_content .center_box p {
+.modal .modal_content .center_box p,
+.modal_light .modal_content .center_box p {
   margin: 6px 0;
   font-weight: bold;
 }
-.modal .modal_content .center_box b {
+.modal .modal_content .center_box b,
+.modal_light .modal_content .center_box b {
   font-size: 150%;
   color: #3d3e7e;
   border: 1px solid;
   padding: 0.5em 1.5em;
   display: inline-block;
 }
-.modal .close {
+.modal .close,
+.modal_light .close {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -7062,17 +7069,31 @@ table caption {
   border: 1px solid #ddd;
   background: url(../images/basic/icon_close.svg) no-repeat center center;
 }
-.modal .close:hover, .modal .close:focus {
+.modal .close:hover, .modal .close:focus,
+.modal_light .close:hover,
+.modal_light .close:focus {
   cursor: pointer;
 }
-.modal li a {
+.modal li a,
+.modal_light li a {
   display: initial;
 }
+.modal._light,
+.modal_light._light {
+  height: auto;
+  padding: 3em 1.5em;
+}
 @media screen and (max-width: 767px) {
-  .modal {
+  .modal,
+  .modal_light {
     width: 90%;
     margin-left: -45%;
   }
+}
+
+.modal_light {
+  height: auto;
+  padding: 3em 1.5em;
 }
 
 @keyframes scaleUp {
@@ -9987,6 +10008,14 @@ ol.list_info li {
     padding: 1em 1.5em;
     margin: 1em 0;
   }
+}
+
+._confirm {
+  background: #ddf3f4;
+  padding: 1em 2em;
+  text-align: center;
+  margin: 1em 0;
+  border-radius: 6px;
 }
 
 .divid {

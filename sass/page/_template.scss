@@ -1900,6 +1900,24 @@ ol.list_info{
         margin: 1em 0;
     }
 }
+._confirm{
+    // 樣式：checkbox 確認
+    // color: #29575a;
+    background: #ddf3f4;
+    padding: 1em 2em;
+    text-align: center;
+    margin: 1em 0;
+    border-radius: 6px;
+    // input[type="checkbox"]:checked,
+    // input[type="checkbox"]:focus,
+    // input[type="radio"]:checked,
+    // input[type="radio"]:focus {
+    //     border-color: $lightColor;
+    //     background-color: $lightColor;
+    //     outline: none;
+    //     box-shadow: $lightColor 0 0 0 2px;
+    // }
+}
 .divid{
     background-color: #fff;
     padding: 4px 0;
