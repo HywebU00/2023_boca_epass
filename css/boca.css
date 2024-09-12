@@ -9129,11 +9129,6 @@ ol.list_info li {
 .Login .link._center {
   justify-content: center;
 }
-.Login .link._center a.apply {
-  width: 420px;
-  font-size: 1.65em;
-  letter-spacing: 3px;
-}
 .Login .link a {
   text-align: center;
   margin-right: 20px;
@@ -9172,15 +9167,22 @@ ol.list_info li {
   padding-top: 110px;
 }
 .Login .link a.apply {
-  background: url(../images/basic/iconGo.svg) right 12% top 50% no-repeat #ee7700;
+  background: url(../images/basic/iconGo.svg) right 8% top 50% no-repeat #ee7700;
   background-size: 56px 56px;
   color: #fff;
   width: 300px;
   height: 100px;
   font-size: 1.125em;
-  line-height: 100px;
   border-radius: 100px;
   box-shadow: inset 0 0 0 0 #ff9224;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 460px;
+  font-size: 1.65em;
+  letter-spacing: 3px;
   position: relative;
   z-index: 3;
   transition: 0.3s;
@@ -9190,8 +9192,15 @@ ol.list_info li {
 }
 .Login .link a.apply:hover, .Login .link a.apply:focus-visible {
   box-shadow: inset 0 0 0 10px #ff9224;
-  background: url(../images/basic/iconGo.svg) right 20px top 50% no-repeat #ee7700;
+  background: url(../images/basic/iconGo.svg) right 16px top 50% no-repeat #ee7700;
   background-size: 56px 56px;
+}
+.Login .link a.apply span {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  font-size: 60%;
+  letter-spacing: 1px;
 }
 .Login .link a:hover:before, .Login .link a:focus-visible:before {
   background: #ee7700;
@@ -9209,7 +9218,20 @@ ol.list_info li {
   }
   .Login .link a.apply {
     width: 100%;
+    height: 150px;
+    align-content: flex-start;
     margin-top: 1em;
+    padding: 26px 0 0;
+    font-size: 1.75em;
+    background: url(../images/basic/iconGo.svg) left 50% bottom 10px no-repeat #ee7700;
+    background-size: 56px 56px;
+  }
+  .Login .link a.apply span {
+    margin-top: 8px;
+  }
+  .Login .link a.apply:hover, .Login .link a.apply:focus-visible {
+    background: url(../images/basic/iconGo.svg) left 50% bottom 10px no-repeat #ee7700;
+    background-size: 56px 56px;
   }
 }
 .Login .applyInfo {
