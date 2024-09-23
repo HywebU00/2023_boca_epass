@@ -8864,10 +8864,10 @@ ol.list_info li {
   }
   .Login .control_panle .container .passport {
     top: -70px;
-    right: -120px;
+    right: -167px;
   }
   .Login .control_panle .container .passport img {
-    transform: scale(0.7);
+    transform: scale(0.6);
   }
 }
 .Login .control_panle .col {
@@ -9170,9 +9170,9 @@ ol.list_info li {
   background: url(../images/basic/iconGo.svg) right 8% top 50% no-repeat #ee7700;
   background-size: 56px 56px;
   color: #fff;
-  width: 300px;
-  height: 100px;
+  height: 120px;
   font-size: 1.125em;
+  line-height: 1.2;
   border-radius: 100px;
   box-shadow: inset 0 0 0 0 #ff9224;
   display: flex;
@@ -9180,7 +9180,7 @@ ol.list_info li {
   align-items: center;
   justify-content: center;
   align-content: center;
-  width: 460px;
+  width: 540px;
   font-size: 1.65em;
   letter-spacing: 3px;
   position: relative;
@@ -9201,6 +9201,7 @@ ol.list_info li {
   margin-top: 4px;
   font-size: 60%;
   letter-spacing: 1px;
+  line-height: 1.3;
 }
 .Login .link a:hover:before, .Login .link a:focus-visible:before {
   background: #ee7700;
@@ -9218,7 +9219,7 @@ ol.list_info li {
   }
   .Login .link a.apply {
     width: 100%;
-    height: 150px;
+    height: 180px;
     align-content: flex-start;
     margin-top: 1em;
     padding: 26px 0 0;
@@ -9228,6 +9229,7 @@ ol.list_info li {
   }
   .Login .link a.apply span {
     margin-top: 8px;
+    font-size: 50%;
   }
   .Login .link a.apply:hover, .Login .link a.apply:focus-visible {
     background: url(../images/basic/iconGo.svg) left 50% bottom 10px no-repeat #ee7700;
@@ -9419,6 +9421,12 @@ ol.list_info li {
   height: 2px;
   left: 220px;
   background: #fff;
+}
+@media screen and (max-width: 767px) {
+  .Login .applyInfo h3:after,
+  .Login .prepareInfo h3:after {
+    width: 110px;
+  }
 }
 @keyframes Shake {
   0% {
@@ -10101,6 +10109,7 @@ ol.list_info li {
   }
   .rwd_YT .wrap {
     width: 100%;
+    margin-right: 0;
   }
 }
 
